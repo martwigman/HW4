@@ -40,7 +40,7 @@ public class LinkedList<T> {
 		resetIndex();
 	}
 	public void add(int index, T t) {
-		//head.next = new Node(t, head.next)
+		head.next = new Node(t, head.next);
 		resetIndex();
 	}
 	

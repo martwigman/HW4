@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class KeywordList extends LinkedList{
 	private LinkedList<Keyword> lst;
 	
@@ -10,10 +8,10 @@ public class KeywordList extends LinkedList{
 	public void add(Keyword keyword){
 		// add keyword to proper index base on its count
 		
-		for(int i=0;i<=lst.size();i++) {
-			Keyword k=lst.get(i);
-			
-			if(k.count>=keyword.count) {
+		for (int i = 0; i <= lst.size(); i++) {
+			Keyword k = lst.get(i);
+
+			if (k.count >= keyword.count) {
 				lst.add(keyword);
 				System.out.println("done");
 				return;
